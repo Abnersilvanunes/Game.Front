@@ -1,0 +1,33 @@
+<%- include('../Partials/header.ejs')  %>
+
+    <title>Listagem de Categoria </title>
+
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <%- include('../Partials/menu.ejs')  %>
+
+        <div class="card mt-2">
+            <div class="card-header">Listagem de Categoria</div>
+        </div>
+
+        <%
+            categorias.forEach(categoria=>{
+        %>
+            <div class="card mt-2">
+                <div class="card-body">
+                    <%= categoria.nome_categoria %>
+                </div>
+                <a href="/formEdicaoCategorias/<%= categoria.id %>" class="btn btn-success mt-1">Editar</a>
+                <a href="#" class="btn btn-danger mt-1">Excluir</a>
+            </div>
+        <% }) %>
+
+    </div>
+
+</body>
+
+<%- include('../Partials/Footer.ejs')  %>
