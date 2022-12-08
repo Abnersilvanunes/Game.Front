@@ -4,16 +4,24 @@
   "description": "Front-end",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "Abner",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.2.0",
-    "bootstrap": "^5.2.3",
+    "axios": "^0.27.2",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "node.js": "^0.0.1-security",
     "nodemon": "^2.0.20"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abnersilvanunes/Game.Front.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Abnersilvanunes/Game.Front/issues"
+  },
+  "homepage": "https://github.com/Abnersilvanunes/Game.Front#readme"
 }
